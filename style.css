@@ -1,0 +1,158 @@
+:root {
+    --orange: hsl(31, 77%, 52%);
+    --darkcyan: hsl(184, 100%, 22%);
+    --verydarkcyan: hsl(179, 100%, 13%);
+    --paragraphs: hsla(0, 0%, 100%, 0.75);
+    --backgroundcolor: hsl(0, 0%, 95%)
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--backgroundcolor);
+}
+
+.container {
+    width: 900px;
+    height: 400px;
+    display: flex;
+    margin: 250px auto;
+    align-items: center;
+    justify-content: center;
+}
+
+.sedans {
+    position: relative;
+    width: 500px;
+    height: 500px;
+    background-color: var(--orange);
+    border-radius: 10px 0px 0 10px;
+}
+
+.suvs {
+    position: relative;
+    width: 500px;
+    height: 500px;
+    background-color: var(--darkcyan);
+}
+
+
+.luxury  {
+    position: relative;
+    width: 500px;
+    height: 500px;
+    background-color: var(--verydarkcyan);
+    border-radius: 0px 10px 10px 0px;
+}
+
+img {
+    margin-top: 2rem;
+    margin-left: 3rem;
+}
+
+h2 {
+    font-family: 'Big Shoulders Display', cursive; 
+    font-size: 28px; 
+    font-weight: 700; 
+    line-height: 1.2; 
+    color: white;
+    font-weight: 700;
+    left: 50px;
+    position: relative;
+    text-transform: uppercase;
+}
+
+p {
+    color:var(--paragraphs);
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 16px; 
+    font-weight: 400; 
+    line-height: 1.7; 
+    margin-left: 50px;
+}
+
+.container a {
+    width: 150px;
+    height: 50px;
+    display: flex;
+    font-family: 'Lexend Deca', sans-serif;
+    border-radius: 25px;
+    position: absolute;
+    left: 15%;
+    top: 70%;
+    background-color: var(--backgroundcolor);
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+a.left-button {
+    color: var(--orange);
+}
+
+a.left-button:hover{
+    background-color: transparent;
+    color: var(--backgroundcolor);
+    border: 2px solid var(--backgroundcolor);
+    cursor: pointer;
+}
+
+a.center-button {
+    color: var(--darkcyan);
+}
+
+a.center-button:hover{
+    background-color: transparent;
+    color: var(--backgroundcolor);
+    border: 2px solid var(--backgroundcolor);
+    cursor: pointer;
+}
+
+a.right-button {
+    color: var(--verydarkcyan);
+}
+
+a.right-button:hover{
+    background-color: transparent;
+    color: var(--backgroundcolor);
+    border: 2px solid var(--backgroundcolor);
+    cursor: pointer;
+}
+
+.attribution {
+    text-align: center;
+    justify-content: center;
+    bottom: 20%;
+    left: 40%;
+    position: absolute;
+}
+
+@media only screen and (max-width: 768px) {
+    .container {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .attribution {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 912px) {
+    .container {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    
+    .attribution {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    .container {
+        margin: 2rem .5rem;
+    }
+}
+
