@@ -156,3 +156,7 @@ a.right-button:hover{
     }
 }
 
+.attribution {
+    position: absolute;
+    bottom: 0;
+ }
